@@ -42,7 +42,15 @@ public class MainActivity extends AppCompatActivity {
                 if(stopThread){
                     return;
                 }
-                if(i == 2){
+                if(i == 1){
+                    mainHandler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            comPic.setImageResource(R.drawable.pic1);
+                        }
+                    });
+                }
+                if(i == 3){
                     mainHandler.post(new Runnable() {
                         @Override
                         public void run() {
@@ -50,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                     });
                 }
-                if(i == 4){
+                if(i == 5){
                     mainHandler.post(new Runnable() {
                         @Override
                         public void run() {
@@ -58,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                     });
                 }
-                if(i == 6){
+                if(i == 7){
                     mainHandler.post(new Runnable() {
                         @Override
                         public void run() {
@@ -66,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                     });
                 }
-                if(i == 8){
+                if(i == 9){
                     mainHandler.post(new Runnable() {
                         @Override
                         public void run() {
@@ -74,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                     });
                 }
-                if(i == 10){
+                if(i == 11){
                     mainHandler.post(new Runnable() {
                         @Override
                         public void run() {
@@ -83,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                     });
                 }
                 if(i == 12){
-                    i = 0;
+                   i = 0;
                 }
 
                 Log.d("Thread","Start Thread: " + i);
