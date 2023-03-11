@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         comPic = findViewById(R.id.commPic);
 
-        CommRunnable comRun = new CommRunnable(11);
+        CommRunnable comRun = new CommRunnable(13);
         new Thread(comRun).start();
 
     }
@@ -82,6 +82,10 @@ public class MainActivity extends AppCompatActivity {
                         }
                     });
                 }
+                if(i == 12){
+                    i = 0;
+                }
+
                 Log.d("Thread","Start Thread: " + i);
                 try{
                     Thread.sleep(1000);
